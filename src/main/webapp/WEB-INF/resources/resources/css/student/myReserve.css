@@ -1,0 +1,183 @@
+/* 예약한 강의페이지 */
+@charset "UTF-8";
+
+/* 메인 오른쪽 전체 */
+.page {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* 강의 박스 */
+.list {
+	border: 1px solid #ccc;
+	padding: 2em;
+	margin-bottom: 2em;
+	width: 80%;
+	display: flex;
+	height: 200px;
+	position: relative;
+	background-color: white;
+	box-shadow: 2px 8px 12px 0 rgba(20,20,20,.02);
+}
+
+
+/* 제목 */
+.lec {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+/* 내용 */
+.lec_info {
+	font-size: 1.2em;
+	margin-left: 2rem;
+	font-weight: bolder;
+}
+
+/* 후기 작성 */
+#btn_popup_open {
+	position: absolute;
+	height: 35px;
+	bottom: 1em;
+	right: 1em;
+	color: white;
+}
+
+/* 수강 후기 */
+.popup_panel {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100
+}
+
+.popup_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .5;
+	filter: alpha(opacity = 50)
+}
+
+.popup_contents {
+	position: absolute;
+	top: 30%;
+	left: 35%;
+	width: auto;
+	height: 500px;
+	border: 2px solid #5294de;
+	background-color: #fff;
+}
+
+/* 수강후기 컨테이너 */
+#container {
+	margin: auto;
+	background-color: #fff;
+	max-width: 600px;
+	height: 550px;
+	padding: 30px
+}
+
+/* 수강 후기 페이지 */
+.form-wrap {
+	padding: 15px 25px;
+	color: #333;
+	text-align: center;
+}
+
+/* 코멘트 */
+.form-group {
+	margin-top: 15px
+}
+
+/* 별점 선택 */
+.star-group {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 10px;
+}
+
+/* 텍스트 입력자 */
+#textarea {
+	font-family: 'NanumSquareRound';
+	font-size: 18px;
+	margin-top: 15px;
+	border: solid #d3d3d3;
+	border-radius: 4px;
+	resize: none
+}
+
+/* 버튼 */
+.form-wrap button {
+	display: block;
+	width: 47.9%;
+	padding: 10px;
+	margin-top: 30px;
+	margin-right: 10px;
+	background:  #0C151C;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	float: left;
+	border: 0;
+	border-radius: 15px
+}
+
+/* 버튼 호버 */
+.form-wrap button:hover {
+	background-color: #333b3d;
+}
+
+/* 별 */
+.star {
+	font-size: 30px
+}
+
+/* 기본 별점 */
+#star_grade a {
+	text-decoration: none;
+	color: gray
+}
+
+/* 누른 별점 */
+#star_grade a.on {
+	color: orange
+}
+
+.btn-primary{
+	background-color: rgba(0,0,0,0.4);
+	border:none;
+	outline: rgba(0,0,0,0.4);
+}
+.btn-primary:hover{
+	background-color: black;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+	background-color: black;
+	border-color: black;
+    box-shadow: 0 0 0 0.25rem rgba(246,246,246,.5);
+		
+}
+
+@media screen and (max-width: 768px){
+/* 	#container{
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		top:0;
+		left:0;		
+	} */
+	.popup_contents{  
+		margin-left:-180px;
+		margin-top: -100px;
+	}
+}

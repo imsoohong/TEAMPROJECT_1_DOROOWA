@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@media screen and (max-width: 768px) {
+ .grid-container {
+  	width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  #slider {
+  	width: 100%;
+  	height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    color: white;
+  }
+  #slider img{
+  width: 100%;
+  height: 500px;
+  }
+  .lecture__thumnail img{
+  	display: block;
+  }
+  .main {
+    margin-top: 0;
+    position: relative;
+  }
+
+  .lecturelist{
+  display:flex;
+  flex-flow: row wrap;
+  }
+  .lecturelist a, .card{
+  width: 13rem;
+  }
+  .lec__category{
+  	margin-top: 1em;
+  	width: 100%;
+  	display: flex;
+  	justify-content: flex-end;
+    flex-flow: row wrap;
+  }
+  .lec__category .btn-outline-primary, #listset{
+  	width: 18%;
+  	height: 3rem;
+	}
+  .lecture__ul li {
+    width: 25%;
+  }
+  .left {
+    width: 100%;
+  }
+  .rright {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 00px;
+    background-color: white;
+    box-shadow: none;
+    height: 3.5rem;
+    top: auto;
+    right: 0;
+    z-index:5;
+  }
+  .right__text {
+    display: none;
+  }
+  .rright button {
+    width: 45%;
+    height: 3rem;
+    padding: auto;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 100vw;
+      grid-template-rows: 51px 500px 1fr 260px;
+      gap: 0px 0px;
+      grid-template-areas:
+        "header"
+        "slider"
+        "main"
+        "footer";
+    }
+}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*{
+	list-style: none;
+}
+/*공지사항*/
+#title {
+	font-size: 5em;
+	text-align: center;
+}
+ul{
+	text-align: center;
+}
+
+.noticeInfo {
+	display:flex;
+	justify-content: space-between;
+	
+}
+#ntitle {
+	margin-left: 12vw;
+}
+/*모달창*/
+main .modal .modal-header, 
+main .modal .modal-body { padding:8px; }
+main .modal .modal-footer { padding:6px; }
+
+/* 게시판 내용(ncontent)*/
+#ncontent_box{
+	display:flex;
+	justify-content: center;
+}
+#ncontent{
+	height:550px;
+	justify-content: flex-start;
+}

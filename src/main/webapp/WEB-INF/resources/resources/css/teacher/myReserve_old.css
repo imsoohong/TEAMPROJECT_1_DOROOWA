@@ -1,0 +1,151 @@
+/* 예약한 강의페이지 */
+@charset "UTF-8";
+
+/* 메인 오른쪽 전체 */
+.page {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/* 강의 박스 */
+.list {
+	display: flex;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+}
+
+/* 제목 */
+.lec {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+/* 내용 */
+.lec_info {
+	font-size: 1.2em;
+	margin-left: 20px;
+	font-weight: bolder;
+}
+
+/* 후기 작성 */
+/* 버튼이 박스 안에 잘 안들어가서 일단 sticky로 해놓음 */
+#btn_popup_open {
+	position: absolute;
+	height: 35px;
+	bottom: 1em;
+	right: 1em;
+}
+
+/* 수강 후기 */
+.popup_panel {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100
+}
+
+.popup_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .5;
+	filter: alpha(opacity = 50)
+}
+
+.popup_contents {
+	position: absolute;
+	top: 30%;
+	left: 35%;
+	width: auto;
+	height: 500px;
+	border: 2px solid #5294de;
+	background-color: #fff;
+}
+
+/* 수강후기 컨테이너 */
+#container {
+	border-radius: 20px;
+	margin: auto;
+	background-color: #fff;
+	max-width: 600px;
+	height: 550px;
+	padding: 30px
+}
+
+/* 수강 후기 페이지 */
+.form-wrap {
+	padding: 15px 25px;
+	color: #333;
+	text-align: center;
+}
+
+/* 코멘트 */
+.form-group {
+	margin-top: 15px
+}
+
+/* 별점 선택 */
+.star-group {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center
+}
+
+/* 텍스트 입력자 */
+#textarea {
+	font-family: 'NanumSquareRound';
+	font-size: 18px;
+	border: solid #d3d3d3;
+	border-radius: 4px;
+	resize: none
+}
+
+/* 버튼 */
+.form-wrap button {
+	display: block;
+	width: 47.9%;
+	padding: 10px;
+	margin-top: 20px;
+	margin-right: 10px;
+	background: #00acee;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	float: left;
+	border: 0;
+	border-radius: 15px
+}
+
+/* 버튼 호버 */
+.form-wrap button:hover {
+	background: #2bc4ff;
+}
+
+/* 별 */
+.star {
+	font-size: 30px
+}
+
+/* 기본 별점 */
+#star_grade a {
+	text-decoration: none;
+	color: gray
+}
+
+/* 누른 별점 */
+#star_grade a.on {
+	color: orange
+}

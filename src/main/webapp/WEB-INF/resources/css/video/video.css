@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+*{
+	padding: 0; margin: 0; box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    text-align: center;
+    margin: 0; padding: 0;
+    overflow: hidden;
+}
+
+.sidenav {
+	height:100%;
+	width: 0;
+	position: fixed;
+	z-index:2;
+	top: 0;
+	right: 0;
+	background-color: white;
+	opacity: 0.8;
+	overflow-x: hidden;
+	transition:0.5s ease-in-out;
+	padding-top: 60px;
+	color: black;
+}
+.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: black;
+		display: block;
+		transition: 0.2s ease-in-out;
+	}
+	.sidenav a:hover, .offcanvas a:focus {
+		color: rgba(0,0,0, 0.8);
+	}
+	.closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px !important;
+		margin-left: 50px;
+	}
+	.openmenu:hover {
+		color:rgb(0,154,200);
+		transition:0.5s ease-in-out;
+	}
+	.openmenu {
+		font-size: 25px;
+		cursor:pointer;
+		transition:0.5s ease-in-out;			
+	}
+	.openmenu > i {
+		font-size: 30px;
+	}
+	.far{
+	color:#B2C0CC;
+	}
+    #myvideo{
+        width: 98vw; 
+        height: 99vh;
+    }
+
+    .menu{
+        background-color: #f1f3f5;
+        height: 100vh;
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    .list__title{
+        background-color: #DADADB;
+        font-size: 1.2em;
+    }
+    .accordion-button{
+    background-color: #e7f1ff;
+    }
+    .accordion-body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    }
+    
+
+		.accordion-button{
+			background-color:#e7f1ff;
+			color:#0c63e4;
+		}
+		.accordion-button::after{
+			    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+		}
+		    
+    
+    .curriculum__text{
+    	display: block;
+    	width: 100%;
+    	margin:0;
+    	text-indent: 1em;
+    	height: auto;
+    	border-bottom: 1px solid rgb(234,234,234);
+    }
+    .curriculum__text:hover{
+    	background-color: rgb(230,230,230);
+    }
+    
+    #curVid {
+    background-color: rgb(230,230,230);
+    }
+    
+    .curriculum__text div{
+    	padding-top: 1rem;
+      padding-bottom: 1rem;
+      text-align: left;
+      position: relative;
+    }
+    .curriculum__text div i{
+    	display:block;
+    	position: absolute;
+    	right: 1em;
+    	top: 45%;
+    	color: blue;
+    }
+    .list{
+    overflow-y: scroll;}
+    hr{
+    	margin:0;
+    }

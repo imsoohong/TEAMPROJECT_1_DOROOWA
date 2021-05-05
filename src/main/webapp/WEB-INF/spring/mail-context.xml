@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" 			value="smtp.gmail.com" />			<!-- 메일서버 주소 -->
+		<property name="port"				value="587" />								<!-- 메일서버 포트 -->
+		<property name="username"		value="gnh967@gmail.com"/>	<!-- 메일계정 -->
+		<property name="password"   value=""/>								<!-- 메일비밀번호 -->
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.smtp.socketFactory.class">javax.net.ssl.SSLSocketFactory</prop>
+				<prop key="maildebug">true</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- 고정 메세지 보낼경우 -->
+	<bean id="preConfiguredMessage" class="org.springframework.mail.SimpleMailMessage">
+		<property name="from" value="sang105kr@gmail.com" />		<!-- 송신자 -->
+		<property name="to"		value="sang105kr2@naver.com" />		<!-- 수신자 -->
+		<property name="subject" value="메일테스트" />							<!-- 이메일 제목 -->
+	</bean>
+
+</beans>
+
+
+
+

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* 전체 그리드 */
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 70vw 1fr;
+	grid-template-rows: 51px 1fr 260px;
+	gap: 0px 0px;
+	grid-template-areas: "header header header" ". main ." "footer footer footer";
+}
+
+/* 메인 */
+.main {
+  grid-area: main; 
+  margin: 10px 0;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+ul{
+	list-style: none;
+}
+
+.main a{
+  text-decoration: none;
+  color: black;
+}

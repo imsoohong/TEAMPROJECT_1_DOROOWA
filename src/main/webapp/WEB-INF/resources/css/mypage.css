@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.3fr 1.8fr 0.3fr;
+  grid-template-rows: 0.1fr 1.9fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". header ."
+    ". main .";
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.mybox {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  font-size: 2em;
+  width: 20%;
+  height: 100%;
+}
+.small {
+  font-size: 0.6em;
+}
+.small:focus,
+a:hover {
+  color: red;
+}
+.page {
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.wishlist {
+  width: auto;
+  display: flex;
+  flex-flow: row wrap;
+}

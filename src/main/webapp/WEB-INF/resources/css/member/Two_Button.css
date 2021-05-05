@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* 두개 버튼 */
+.form-wrap button {
+  width: 49%;
+}
+
+/* 버튼을 양 끝으로 찢어지게 하기 */
+.button-group { 
+  display: flex;
+  justify-content: space-between;
+}

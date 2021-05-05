@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'NanumSquareRound';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 오프라인 강의 레이아웃 */
+section {
+	font-family: 'NanumSquareRound';
+	margin: 30px auto;
+	max-width: 1150px;
+	font-size: 16px;
+}
+
+/* 강의 */
+.lecture__list {
+	padding: 16px 8px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 0;
+	box-shadow: inset 0 -0.0625rem #d7e2eb;
+	cursor: pointer;
+}
+
+/* 이미지 */
+.list__img img {
+  width: 186.67px;
+  height: 120.91px;
+}
+
+/* 제목 수강인원 장소 */
+.list__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	min-width: 64%;
+	max-width: 64%;
+}
+
+.list__content h4 {
+	font-weight: bold;
+	margin: 0;
+}
+
+/* 제목 */
+.list__content h4 {
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+/* 강의 정원과 장소 */
+.content__count, .content__location {
+	margin: 6px 0 0;
+}
+
+.content__count, .content__location {
+	color: #98A8B9;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/* 가격 정보 */
+.content__reserve {
+	text-align: right;
+	display: flex;
+	align-items: center;
+}
+
+.price {
+	padding: 24px 0 0 32px;
+	color: #0078FF;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* 버튼 */
+.reserve__wrapper {
+	margin: 0.75rem 0;
+}
+
+.reserve__wrapper-btn {
+	outline: none;
+	border: none;
+	font-size: 16px;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	padding: 0.5rem 0.5rem;
+	color: white;
+	background-color: #0053F4;
+}
+
+.reserve__wrapper-btn:hover {
+	background-color: #3375F6;
+}

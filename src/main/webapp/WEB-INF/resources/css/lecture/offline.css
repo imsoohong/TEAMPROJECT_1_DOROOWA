@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'NanumSquareRound';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #aaa;
+}
+
+.off__menu {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+.off__menu a{
+	box-sizing: content-box;
+	margin-right: 1em;
+	width: 5rem;
+}
+.off__menu a .btn{
+	width: 100%;
+}
+#listset{
+	width: 6.5rem;
+}
+
+#card_slider{
+	position: relative;
+	margin-top: 5px;
+}
+.btn-outline-primary{
+	color: black;
+	border-color: black;
+}
+
+.btn-check:focus+.btn-outline-primary, .btn-outline-primary:hover{
+	background-color: black;
+	color: white;
+	outline: black;
+	border-color: black;
+}
+
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0,0, 0,.5);
+}
+#listset{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+/* 오프라인 강의 레이아웃 */
+section {
+	font-family: 'NanumSquareRound';
+	margin: 30px auto;
+	max-width: 1150px;
+	font-size: 16px;
+}
+
+/* 강의 */
+.lecture__list {
+	padding: 16px 8px;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 0;
+	box-shadow: inset 0 -0.0625rem #d7e2eb;
+	cursor: pointer;
+}
+
+/* 이미지 */
+.list__img img {
+  width: 186.67px;
+  height: 120.91px;
+}
+
+/* 제목 수강인원 장소 */
+.list__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	min-width: 64%;
+	max-width: 64%;
+}
+
+.list__content h4 {
+	font-weight: bold;
+	margin: 0;
+}
+
+/* 제목 */
+.list__content h4 {
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+/* 강의 정원과 장소 */
+.content__count, .content__location, .content__date {
+	margin: 6px 0 0;
+}
+
+.content__count, .content__location, .content__date {
+	color: #98A8B9;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/* 가격 정보 */
+.content__reserve {
+	text-align: right;
+	display: flex;
+	align-items: center;
+}
+
+.price {
+	padding: 24px 0 0 32px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* 버튼 */
+.reserve__wrapper {
+	margin: 0.75rem 0;
+}
+
+.reserve__wrapper-btn {
+	outline: none;
+	border: none;
+	font-size: 16px;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	text-align: center;
+	padding: 0.5rem 0;
+	color: white;
+	width: 80px;
+	background-color: black;
+	opacity: 0.4;
+}
+
+.reserve__wrapper-btn:hover {
+	background-color: black;
+	opacity: 1;
+}
+
+.end__wrapper-btn{
+	outline: none;
+	border: none;
+	font-size: 16px;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	text-align: center;
+	padding: 0.5rem;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: white;
+	width: 80px;
+  background-color: black;
+  opacity: 1;
+}

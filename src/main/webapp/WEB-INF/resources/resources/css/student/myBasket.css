@@ -1,0 +1,109 @@
+/* 태그 설정 */
+a {
+  text-decoration: none; 
+  color: black;  
+}
+
+/* 결제과정 / 총계 */
+h4 {
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+button:focus{ 
+  outline: none;
+}
+
+/* 결제 과정 */
+.main__payment{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* 강의 내역과 결제 */
+.main__order{
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__items{
+  flex-basis: 60%;
+}
+
+/* 강의 상세 */
+.list__item{
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.item__img { 
+  display: flex;
+  align-items: center;
+}
+
+.item__img img{ 
+  width: 200px;
+}
+
+.item__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.item__intro p {
+  margin: 6px 0;
+}
+
+/* 결제 박스 */
+.container__order{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+
+.order__box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  height: 125px;
+  border-radius: 8px;
+}
+
+.order__box p{
+  margin: 0;
+}
+
+/* 결제 버튼 */
+.box-btn {
+  width: 80%;
+  padding: 8px; 
+  background: black;
+  opacity: 0.4;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.box-btn:hover{
+	opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+	.main {
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	}
+}

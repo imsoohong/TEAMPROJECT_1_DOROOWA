@@ -1,0 +1,28 @@
+fieldset{width: 100%; margin-bottom: 5em;}
+
+table{width: 100%;}
+
+td{width: 25%;}
+
+.btn-wish {
+    display: inline-block;
+    padding: 5px;
+    color: red;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+.list-group-item,.card{
+    border: none;
+}
+.card{
+    display: inline-block;
+    margin-right: 32px;
+}
+.list-group{
+    margin-top: -20px;
+}
+.list-group-item{
+    margin-top: -5px;
+}

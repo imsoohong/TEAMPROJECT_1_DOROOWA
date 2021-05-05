@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#title {
+	font-size: 5em;
+	text-align: center;
+}
+table {
+	text-align: center;
+}
+
+#nnum {
+	display: none;
+}
+/* 검색창 */
+.find{
+	display: flex;
+	justify-content: center;
+}
+
+/*section a태그 글자색*/
+#card_slider a{
+	color: black;
+}

@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+/* 한개 버튼 */
+.form-wrap button {
+  width: 100%;
+}

@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* 폰트 설정 */
+@font-face {
+	font-family: 'NanumSquareRound';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 레이아웃 */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'NanumSquareRound';
+}
+
+/* 태그 설정 */
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.2em;
+}
+
+/* 헤더 */
+.header {
+	grid-area: header;
+	display: grid;
+	grid-template-columns: 235px 1fr;
+	grid-template-rows: 90px 50px;
+	gap: 0px 0px;
+	grid-template-areas: "logo top" "bottom bottom";
+	align-items: center;
+}
+
+.header__logo {
+	grid-area: logo;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* 검색창 */
+.header__top {
+	grid-area: top;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+}
+
+/* 검색창 */
+.input-group {
+	margin-left: 24px;
+	width: 30%;
+	height: 40%;
+}
+
+.input-group:focus-within {
+	width: 45%;
+	transition: 0.5s;
+}
+
+#search:focus {
+	outline: none;
+	border: none;
+	border-right: 0px;
+	border-top: 0px;
+	border-left: 0px;
+	border-bottom: 0px;
+}
+
+/* 헤더 메뉴 */
+.header__right {
+	margin-top: 4px;
+	height: 60%;
+}
+
+/* 상단 메뉴 */
+.header__bottom {
+	grid-area: bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+/* a태그 효과 */
+.header__right a:hover, .header__bottom a:hover {
+	color: white;
+	font-weight: bold;
+}
+
+.header__right a:hover, .item__intro a:hover {
+	color: black;
+	font-weight: bold;
+}
+
+.header__right i{
+	margin-right: 10px;
+	color: #98989C;
+}
+
+.header__right i:hover{
+	color: black;
+}
+
+/* 메뉴바 */
+nav {
+	height: 50px;
+	background-color: #00acee;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+nav>a {
+	color: white;
+	font-size: 1em;
+}
+

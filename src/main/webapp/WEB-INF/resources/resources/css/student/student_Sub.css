@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* 메인 */
+.main {
+ 	display: flex;
+ }
+ 
+body {
+	background-color: rgb(246,246,246);
+}
+
+/* 메인 왼쪽 박스 */
+.mybox {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 26px;
+	width: 20%;
+	height: 100%;
+}
+
+/* 왼쪽 강의내역, 회원정보 */
+.mybox h6 {
+	text-align:left;
+	padding-left: 2em;
+	margin-bottom: 1em;
+	color: rgba(0,0,0, 0.4);
+}
+
+.mybox .active{
+	color: black;
+}
+
+.mybox p:hover {
+    background-color: rgb(248, 248, 249);
+    border-radius: 8px;
+    box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* 메인 오른쪽 박스 */
+.page {
+	width: 80%;
+	height: 100%;
+	padding: 0 10px;
+}
+
+/* 강사페이지 [강의내역, 회원정보] 폰트 */
+.small {
+	color: gray;
+	font-size: 0.7em;
+	padding: 8px 12px;
+	
+}
+
+.small:focus,
+.small:hover {
+	font-weight: bold;
+	color: black;
+}

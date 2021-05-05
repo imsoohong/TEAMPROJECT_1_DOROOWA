@@ -1,0 +1,139 @@
+/* 온라인 오프라인 강의 결제페이지의 통합 CSS입니다.*/
+
+/* 폰트 설정 */
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 레이아웃 */
+* { 
+  margin: 0px; 
+  padding: 0px;
+}
+
+body {
+  font-family: 'NanumSquareRound';
+}
+
+/* 태그 설정 */
+a {
+  text-decoration: none; 
+  color: black;  
+  display: inline-block;
+}
+
+/* 전체 그리드 */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 70vw 1fr;
+  grid-template-rows: 51px 1fr 260px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header"
+    ". main ."
+    "footer footer footer";
+}
+
+/* 메인 */
+.main {
+  grid-area: main; 
+  margin: 10px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* 푸터 */
+.footer {
+  border-top: 1px solid #ccc;
+  grid-area: footer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer__wrapper{
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+/* 푸터 위쪽 */
+.footer__top{
+  display:flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.top__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+/* 컬럼 주요 메뉴 */
+.column__title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.column__title img{
+  width: 150px;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.top__column ul,
+.bottom__column ul {
+  text-align: center;
+  padding: 0px;
+}
+
+.top__column li{
+  margin-bottom: 15px;
+  list-style: none;
+  font-size: 16px;
+}
+
+/* 푸터 아래쪽 */
+.bottom__column{
+  display: flex;
+  align-items: center;
+}
+
+.footer__bottom{
+  display:flex;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+/* 푸터 아래쪽 왼쪽 */
+.left__title{
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.left__title span{
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* 푸터 아래쪽 오른쪽 */
+.right__title a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #bdbdbd;
+  line-height: 50px;
+  font-size: 30px;
+  color: white;
+  margin-left: 10px;
+}
+
+.right__title a:hover{
+  color: #ccc;
+}

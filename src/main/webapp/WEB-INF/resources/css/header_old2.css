@@ -1,0 +1,176 @@
+/* 폰트 설정 */
+@font-face {
+	font-family: 'NanumSquareRound';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 레이아웃 */
+* {
+	box-sizing: border-box; margin : 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'NanumSquareRound';
+}
+
+/* 헤더 */
+.header {
+	grid-area: header;
+	display: flex;
+	flex-direction: column;
+	background-color: #0C151C;
+}
+
+.header ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.header li {
+	font-size: 19px;
+}
+
+.header li:hover {
+	cursor: pointer;
+	color: white;
+}
+
+.header a {
+	text-decoration: none;
+	color: #B2C0CC;
+}
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px 16px;
+	position: relative;
+	color: #B2C0CC;
+	height: 51px;
+}
+
+
+.header__left img {
+	max-width: 182px;
+	max-height: 34px;
+} 
+
+.center__menu li{
+  margin: 0 30px;
+}
+
+.right__menu {
+	width: 175px;
+}
+
+.right__menu a {
+	color: #B2C0CC;
+}
+
+.right__menu li{
+	margin: 0 10px;
+}
+
+.right__menu a:hover {
+	color: white;
+}
+
+
+.openmenu{
+	display: none;
+}
+
+.sidenav {
+	height:100%;
+	width: 0;
+	position: fixed;
+	z-index:2;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0, 0.8);
+	overflow-x: hidden;
+	transition:0.5s ease-in-out;
+	padding-top: 60px;
+}
+.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #fff;
+		display: block;
+		transition: 0.2s ease-in-out;
+	}
+	.sidenav a:hover, .offcanvas a:focus {
+		color: #000;
+	}
+	.closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px !important;
+		margin-left: 50px;
+	}
+	.openmenu:hover {
+		color:rgb(0,154,200);
+		transition:0.5s ease-in-out;
+	}
+	.openmenu {
+		font-size: 25px;
+		cursor:pointer;
+		transition:0.5s ease-in-out;			
+	}
+	.openmenu > i {
+		font-size: 30px;
+	}
+@media screen and (max-width: 768px) { 
+	.openmenu{
+	display: block;
+	color: white;
+	position: absolute;
+	left: 1em;
+	}
+	.header__center, .header__right{
+	display: none;
+	}
+	.header{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	}
+}
+
+
+/* .bottom__menu {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 0;
+	box-shadow: inset 0 -0.0625rem #d7e2eb;
+	height: 38px;
+}
+
+.bottom__menu li {
+	margin: 0 30px;
+	padding: 5px 0;
+	font-size: 18px;
+}
+
+.bottom__menu li:hover {
+	color: #0078FF;
+	border: 0;
+	box-shadow: inset 0 -0.1875rem #0078ff;
+	background-color: transparent;
+} */

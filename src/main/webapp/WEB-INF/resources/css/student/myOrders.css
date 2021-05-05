@@ -1,0 +1,11 @@
+/* 구매 이력 */
+@charset "UTF-8";
+
+th, td {
+	border: 1px solid gainsboro;
+	text-align: center;
+}
+.table-striped{
+	background-color: white;
+	box-shadow: 2px 8px 12px 0 rgba(20,20,20,.02);
+}

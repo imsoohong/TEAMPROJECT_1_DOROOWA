@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* 박스 전체 감싸는 컨테이너 */
+#container {
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* 본문 텍스트 */
+.form-wrap .form-group {
+  margin: 50px auto;
+}
+
+/* 버튼 */
+.form-wrap button {
+  display: inline-block;
+  width: 40%;
+  height: 300px;
+  font-size: 40px;
+  border-radius: 50%;
+  float:none;
+}
+
+
+
+/* 푸터 */
+/* 버튼이 크기 때문에 글자 크기도 키움 */
+footer a {
+  font-size: 20px;
+}
+
+/* 버튼에 애니메이션 효과 주기 */
+.form-group button { 
+  transition: all 300ms ease;
+}
+
+.form-group button:hover {
+
+transform: translateY(-20px);
+
+background-color: black;
+
+}

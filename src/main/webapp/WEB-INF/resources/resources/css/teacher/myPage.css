@@ -1,0 +1,97 @@
+/* 구매한 강의페이지 */
+@charset "UTF-8";
+
+/* 오른쪽 전체 */
+.page {
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+/* 강의 박스 */
+.list {
+	border: 1px solid #ccc;
+	padding: 3em;
+	margin-bottom: 2em;
+	width: 80%;
+	height: auto;
+	position: relative;
+}
+
+/* 박스 안에서 내용 */
+.list>.content {
+	display: flex;
+	margin: 1em;
+}
+
+/* 내용안에 강의 제목 수강 여부 */
+.list>.content>.title {
+	width: 70%;
+	height: 50%;
+	margin: 1em;
+	margin-left: 2em;
+}
+
+/* 수강 여부 버튼 */
+.list>.content>.title>button {
+	display: inline-block;
+}
+
+/* 이미지 */
+.list>.content>img {
+	width: 25%;
+	height: 100%;
+}
+
+
+/* 강사페이지*/
+.chapter{
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: column;
+	width:100%;
+}
+
+.chapter__kind {
+	transform: translate(-2em, -2em);
+	font-size: 0.9em;
+	font-weight:bold;
+}
+
+.chapter .input_wrapper{
+	display: flex;
+	flex-wrap: no-wrap;
+	margin-bottom: 1.5em;
+}
+
+.chapter .input_wrapper .form-control {
+	width: 400px;
+	height: 2.5rem;
+}
+
+.chapter .input_wrapper #addBtn {
+	height: 2.5rem;
+}
+
+#myList{
+	margin: 0; padding: 0;
+}
+
+.list-group {
+	width: 70%;
+	border: 1px solid rgba(0,0,0,0.125);
+}
+
+.accordion-button{
+	color: #0c63e4;
+	background-color:#e7f1ff;
+	border: 1px solid rgba(0,0,0,0.125);
+}
+
+.accordion-button::after{
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.collapsed {
+	border: 1px solid rgba(0,0,0,0.125);
+}

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/* 폰트 설정*/
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 전체 레이아웃 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'NanumSquareRound';
+  border: none;
+  outline: none;
+}
+
+body {
+  font-weight: bold;
+  background-color: rgb(246,246,246);
+  line-height: 1.8;
+}
+
+/* 박스 전체 감싸는 컨테이너 */
+#container {
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 30px;
+}
+
+/* 본문 */
+.form-wrap {
+  padding: 15px 25px;
+  color: #333;
+}
+
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+}
+
+/* 본문 텍스트 */
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  display: inline-block;
+  color: #666;
+}
+
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 15px;
+  border: #ddd 1px solid;
+  border-radius: 15px;
+}
+
+.form-wrap .form-group .gender{
+	width: 1em;
+}
+.gender{
+	padding-left: 2em;
+}
+/* 버튼 */
+.form-wrap button {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.form-wrap button:hover {
+  background: black;
+}
